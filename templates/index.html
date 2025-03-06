@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Recipe Finding App</title>
+    </head>
+    <body>
+        <h1>Recipe Finding App</h1>
+        <form action="{{ url_for('fetch_item') }}" method="POST">
+            <button type="submit">Find recipe by nutrient</button>
+        </form>
+        <form action="{{ url_for('fetch_ct') }}" method="POST">
+            <button type="submit">Find recipe by cooking time</button>
+        </form>
+        <form action="{{ url_for('fetch_id') }}" method="POST">
+            <button type="submit">Find recipe by ID</button>
+        </form>
+
+        <form action="{{ url_for('fetch_recipe_random') }}" method="POST">
+            <button type="submit">Try a random recipe</button>
+        </form>
+    </body>
+</html>
