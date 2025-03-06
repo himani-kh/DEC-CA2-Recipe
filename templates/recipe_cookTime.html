@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Recipe Finding App</title>
+    </head>
+    <body>
+        <h1>Cooking Time</h1>
+        <form action="{{ url_for('fetch_recipe_ct') }}" method="POST">
+            <label for="ct">How long would you like to cook</label>
+            <input type="text" name="ct" placeholder="10" required>
+            <button type="submit">Find recipe</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Recipe Finding App</title>
+    </head>
+    <body>
+        <h1>Nutrient</h1>
+        <form action="{{ url_for('fetch_recipe_item') }}" method="POST">
+            <label for="item">What nutrient would you like to eat</label>
+            <input type="text" name="item" placeholder="cake" required>
+            <button type="submit">Find recipe</button>
+        </form>
+    </body>
+</html>

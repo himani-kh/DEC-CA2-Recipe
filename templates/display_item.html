@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Recipe Finding App</title>
+    </head>
+    <body>
+        <h1>Recipe</h1>
+        {% for d in data %}
+        <h3><b>Name:</b> {{ d["name"] }}</h3>
+        <p><b>ID:</b> {{ d["id"] }}</p>
+        <p><b>Description:</b> {{ d["description"] }}</p>
+        <p><b>Prepare Time:</b> {{ d["prepareTime"] }}</p>
+        <p><b>Ingredients:</b></p>
+            {% for i in d["ingredients"] %}
+            <p> <b>Name:</b> {{ i["name"]}}</p>
+            {% endfor %}
+
+        <br><br>
+        {% endfor %}
+    </body>
+</html>
+
